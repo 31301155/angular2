@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item (click)="getInfo()">
+    <ion-avatar item-start>
+      <img src="../../assets/imgs/1.jpg">
+    </ion-avatar>
+    <h2>路飞</h2>
+    <p>13611111111</p>
+    <ion-note item-end>
+      小路
+    </ion-note>
+    </ion-item>
+    <ion-item (click)="getInfo()">
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/1.jpg">
+      </ion-avatar>
+      <h2>路飞</h2>
+      <p>13611111111</p>
+      <ion-note item-end>
+        小路
+      </ion-note>
+    </ion-item>
+    <ion-item (click)="getInfo()">
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/1.jpg">
+      </ion-avatar>
+      <h2>路飞</h2>
+      <p>13611111111</p>
+      <ion-note item-end>
+        小路
+      </ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
