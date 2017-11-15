@@ -11,10 +11,34 @@
     <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
       <ion-icon name="ionic" item-start></ion-icon>
-      <button (click)="login(username, password)">
+      <button (click)="canCell()">
         @退出登录
       </button>
-
+      <button (click)="onSave($event)">Save</button>
+      <button *ngFor="let hero of heroes" (click)="deleteHero(hero)">{{hero.name}}</button>
+      <table border=1>
+        <tr><td [attr.colspan]="1 + 1+1">One-Two</td></tr>
+        <tr><td>Five</td><td>Six</td><td>Six</td></tr>
+        <button [attr.aria-label]="actionName">{{actionName}} with Aria</button>
+      </table>
     </ion-item>
+    <div>
+      <img src="../../assets/imgs/2.jpg">
+      <button (click)="delete()">Delete</button>
+    </div>
+    <button [style.color]="isSpecial ? 'red': 'green'">Red</button>
+    <ul>
+      <li ng-click="add()">
+        <i class="icon-plus"></i>
+        <span>Add New Postback</span>
+      </li>
+      <li class="s-pbAddUrl" ng-repeat="p in postBack track by $index">
+        <input type="text" placeholder="http|https://...">
+        <span ng-click="del($index)" ng-show="$index!=0">
+                            <i class="icon-minus"></i>
+                        </span>
+      </li>
+      <li>Save Edition</li>
+    </ul>
   </ion-list>
 </ion-content>

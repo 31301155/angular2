@@ -11,7 +11,14 @@ export class ContactPage {
   constructor(public navCtrl: NavController) {
 
   }
-  login(){
+  canCell(){
     this.navCtrl.push(loginPage);
   }
+  getVal(){
+
+  }
+  deleteHero(){
+
+  }
+
 }
